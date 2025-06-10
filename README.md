@@ -1,16 +1,23 @@
 # alt-core-docs
 
-## Core Services
+* Core services: click [here](#core-services)
+* Data Layer: click [here](#data-layer)
+* Configuration Files: click [here](#config-files)
+* Sequence Diagrams: click [here](#diagrams)
+
+## <a name="core-services"></a>Core Services
 
 The documentation for Alt core is organized by services.
 
-The services are divide into 3 categories:
+The services are divided into 3 categories:
 
 * **client-side** : services that run on a client node
 * **server-side** : services that run on a server node
 * **cloud** : services that run on a cloud node (e.g. relay HTTP traffic) 
 
 ### Client-side Services
+
+These services run on a client node.
 
 Module  | Component           | Description
 ---------| --------------      | -------------
@@ -22,6 +29,8 @@ Scrubber | TransferService     | Package metadata into ZIP files, transfer to se
 Scrubber | BackupClientService | Process replication orders from server
 
 ### Server-side Services
+
+These services run on a server node.
 
 Module | Component             | Description
 ----------- | -----------------   | -------------
@@ -35,27 +44,28 @@ Mailer      | Mailer              | Communication with Email mailbox
 
 ### Cloud Services
 
+These services run on a cloud node (e.g VM on a Public Cloud such as Amazon, Azure, or GCP)
+
 Module    | Component             | Description
 --------- | --------------        | -------------
 Relay     | RelayService          | Relay HTTP/API requests from clients to server
 
-## Data Layer
+## <a name="data-layer"></a>Data Layer
 
 ### DB records
-* **records.db** : Stores file records - MD5, file paths, timestamps
+* **records.db** : Stores records for each file in the system - MD5, file paths, timestamps
 * **testdb** : Search Index (files and their metadata)
 
 ### LocalDB
 * **localdb/Standard1** : Metadata for a specific file (filename = MD5)
-* **localdb/NodeInfo**  : Information about a client node (ID, time last seen, free space, IP Address)
+* **localdb/NodeInfo**  : Information about a client node (ID, time last seen, free space available, IP Address)
 * **localdb/BatchJobs** : Information about a batch job (filename = Batch ID): Number of files, # of metadata inserts
 * **localdb/BackupJobs** : Replication orders for each client node (what files to distribute in each client)
 
 
-## Configuration Files
+## <a name="config-files"></a>Config Files
 
-
-## High level sequence diagrams
+## <a name="diagrams"></a>Sequence Diagrams
 
 ### 1-ScrubberService
 [ScrubberService](ScrubberService.md)
