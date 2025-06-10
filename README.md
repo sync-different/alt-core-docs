@@ -6,9 +6,9 @@ The documentation for Alt core is organized by services.
 
 The services are divide into 3 categories:
 
-* **client-side** : services that run on client node
+* **client-side** : services that run on a client node
 * **server-side** : services that run on a server node
-* **cloud** : services that run on a cloud node (relay traffic) 
+* **cloud** : services that run on a cloud node (e.g. relay HTTP traffic) 
 
 ### Client-side Services
 
@@ -16,7 +16,7 @@ Module  | Component           | Description
 ---------| --------------      | -------------
 Scrubber | ScannerService      | Scans for new/deleted/changes files in filesystem
 Scrubber | ScrubService        | Extract metadata from files
-Scrubber | ClientService       | Communication channel with Server via REST API
+Scrubber | ClientService       | Communication channel with Server via HTTP/REST API
 Scrubber | ProcessorService    | Ingest metadata , add to local index
 Scrubber | TransferService     | Package metadata into ZIP files, transfer to server
 Scrubber | BackupClientService | Process replication orders from server
@@ -37,9 +37,12 @@ Mailer      | Mailer              | Communication with Email mailbox
 
 Module    | Component             | Description
 --------- | --------------        | -------------
-Relay     | RelayService          | Relay API requests from clients to server
+Relay     | RelayService          | Relay HTTP/API requests from clients to server
 
 ## High level sequence diagrams
 
 ### 1-ScrubberService
 [ScrubberService](ScrubberService.md)
+
+### 2-RTServerService
+[RTServerService](RTServerService.md)
