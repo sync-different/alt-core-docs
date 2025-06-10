@@ -1,3 +1,3 @@
 # alt-core-docs
 
-[scrubber](scrubber.MD)
+[scrubber](scrubber.md)
