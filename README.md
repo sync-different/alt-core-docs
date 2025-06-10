@@ -39,7 +39,7 @@ Module    | Component             | Description
 --------- | --------------        | -------------
 Relay     | RelayService          | Relay API requests from clients to server
 
-##High level sequence diagrams
+## High level sequence diagrams
 
-### 1-ScrubberService - Launch Scrubber Services
+### 1-ScrubberService
 [ScrubberService](ScrubberService.md)
