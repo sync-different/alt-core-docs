@@ -1,13 +1,13 @@
 # alt-core-docs
 
-* Core services: click [here](#core-services)
-* Data Layer: click [here](#data-layer)
-* Configuration Files: click [here](#config-files)
-* Sequence Diagrams: click [here](#diagrams)
+Documenation is organized into these key sections:
+
+* Core services: Description of client, server, and cloud services. Click [here](#core-services)
+* Data Layer: Data layer where all data is persisted. Click [here](#data-layer)
+* Configuration Files: Description of config files. Click [here](#config-files)
+* Sequence Diagrams: Diagrams that describe key user case sequences. Click [here](#diagrams)
 
 ## <a name="core-services"></a>Core Services
-
-The documentation for Alt core is organized by services.
 
 The services are divided into 3 categories:
 
