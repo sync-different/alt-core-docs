@@ -8,8 +8,7 @@ The services are divide into 3 categories:
 
 * **client-side** : services that run on client node
 * **server-side** : services that run on a server node
-* **cloud** : services that provide integration with cloud services
-
+* **cloud** : services that run on a cloud node (relay traffic) 
 
 ### Client-side Services
 

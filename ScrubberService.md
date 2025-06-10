@@ -1,6 +1,8 @@
-# **ScrubberService**
+# **ScrubberService.java**
 
-Here's a sequence diagram for the Scrubber project based on the codebase analysis:
+The system is designed for automated file processing, metadata extraction, and backup operations with real-time server integration.
+
+Here's a sequence diagram for the *ScrubberService* project:
 
 ![Sequence Diagram](scrubber_sequence_diagram.jpg)
 
@@ -13,8 +15,6 @@ This sequence diagram illustrates the Scrubber project's main workflow:
 5. **Data Management**: Stores metadata in a local database and manages file transfers
 6. **Integration**: Communicates with RTServer and performs cloud backups
 7. **Configuration**: Uses property files to control processing behavior
-
-The system appears to be designed for automated file processing, metadata extraction, and backup operations with real-time server integration.
 
 ```mermaid
 sequenceDiagram
