@@ -39,6 +39,22 @@ Module    | Component             | Description
 --------- | --------------        | -------------
 Relay     | RelayService          | Relay HTTP/API requests from clients to server
 
+## Data Layer
+
+### DB records
+* **records.db** : Stores file records - MD5, file paths, timestamps
+* **testdb** : Search Index (files and their metadata)
+
+### LocalDB
+* **localdb/Standard1** : Metadata for a specific file (filename = MD5)
+* **localdb/NodeInfo**  : Information about a client node (ID, time last seen, free space, IP Address)
+* **localdb/BatchJobs** : Information about a batch job (filename = Batch ID): Number of files, # of metadata inserts
+* **localdb/BackupJobs** : Replication orders for each client node (what files to distribute in each client)
+
+
+## Configuration Files
+
+
 ## High level sequence diagrams
 
 ### 1-ScrubberService
