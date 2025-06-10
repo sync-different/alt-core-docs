@@ -1,4 +1,4 @@
-# **Scrubber**
+# **ScrubberService**
 
 Here's a sequence diagram for the Scrubber project based on the codebase analysis:
 

@@ -42,5 +42,5 @@ Relay     | RelayService          | Relay API requests from clients to server
 
 ##High level sequence diagrams
 
-### 1-ScannerService - File change detection and metadata extraction
-[ScannerService](ScannerService.md)
+### 1-ScrubberService - Launch Scrubber Services
+[ScrubberService](ScrubberService.md)
