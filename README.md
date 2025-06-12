@@ -1,13 +1,13 @@
 # alt-core-docs
 
-Documenation is organized into these key sections:
+Alt documentation is organized into these key sections:
 
-* Core services: Description of client, server, and cloud services. Click [here](#core-services)
-* Data Layer: Data layer where all data is persisted. Click [here](#data-layer)
-* Configuration Files: Description of config files. Click [here](#config-files)
-* Sequence Diagrams: Diagrams that describe key user case sequences. Click [here](#diagrams)
+* 1-Core services: Description of client, server, and cloud services. Click [here](#core-services)
+* 2-Data Layer: Data layer where all data is persisted. Click [here](#data-layer)
+* 3-Configuration Files: Description of config files. Click [here](#config-files)
+* 4-Sequence Diagrams: Diagrams that describe key user case sequences. Click [here](#diagrams)
 
-## <a name="core-services"></a>Core Services
+## <a name="core-services"></a>1-Core Services
 
 The services are divided into 3 categories:
 
@@ -19,28 +19,28 @@ The services are divided into 3 categories:
 
 These services run on a client node.
 
-Module  | Component           | Description
+Module   | Component           | Description
 ---------| --------------      | -------------
-Scrubber | ScannerService      | Scans for new/deleted/changes files in filesystem
-Scrubber | ScrubService        | Extract metadata from files
-Scrubber | ClientService       | Communication channel with Server via HTTP/REST API
-Scrubber | ProcessorService    | Ingest metadata , add to local index
-Scrubber | TransferService     | Package metadata into ZIP files, transfer to server
-Scrubber | BackupClientService | Process replication orders from server
+Scrubber | [ScannerService](ScannerService.md)           | Scans for new/deleted/changes files in filesystem
+Scrubber | [ScrubService](ScrubService.md)               | Extract metadata from files
+Scrubber | [ClientService](ClientService.md)             | Find Server IP, Send Ping to Server
+Scrubber | [ProcessorService](ProcessorService.md)       | Ingest metadata , add to local client index
+Scrubber | [TransferService](TransferService.md)         | Package metadata into ZIP files, transfer to server
+Scrubber | [BackupClientService](BackupClientService.md) | Process replication orders from server
 
 ### Server-side Services
 
 These services run on a server node.
 
-Module | Component             | Description
+Module      | Component           | Description
 ----------- | -----------------   | -------------
-Scrubber    | BroadcastService    | Ingest metadata, add to main index
-Scrubber    | ProcessorService    | Ingest metadata, add to main index
-Scrubber    | BackupServerService | Generate backup orders for clients
-Scrubber    | RelayVaultService   | Communicaton to/from Relay Server (for traffic relay)
-RTServer    | WebServer           | HTTP Web Server for REST API
-CloudBackup | AmazonDrive         | Synchronize files with Amazon S3 bucket
-Mailer      | Mailer              | Communication with Email mailbox
+Scrubber    | BroadcastService                        | Broadcast Server IP address (discovered by Client)
+Scrubber    | [ProcessorService](ProcessorService.md) | Ingest metadata, add to main index
+Scrubber    | BackupServerService                     | Generate backup orders for clients
+Scrubber    | RelayVaultService                       | Communicaton to/from Relay Server (for traffic relay)
+RTServer    | WebServer                               | HTTP Web Server for REST API
+CloudBackup | AmazonDrive                             | Synchronize files with Amazon S3 bucket
+Mailer      | Mailer                                  | Communication with Email mailbox
 
 ### Cloud Services
 
@@ -50,7 +50,7 @@ Module    | Component             | Description
 --------- | --------------        | -------------
 Relay     | RelayService          | Relay HTTP/API requests from clients to server
 
-## <a name="data-layer"></a>Data Layer
+## <a name="data-layer"></a>2-Data Layer
 
 ### DB records
 * **records.db** : Stores records for each file in the system - MD5, file paths, timestamps
@@ -63,9 +63,9 @@ Relay     | RelayService          | Relay HTTP/API requests from clients to serv
 * **localdb/BackupJobs** : Replication orders for each client node (what files to distribute in each client)
 
 
-## <a name="config-files"></a>Config Files
+## <a name="config-files"></a>3-Config Files
 
-## <a name="diagrams"></a>Sequence Diagrams
+## <a name="diagrams"></a>4-Sequence Diagrams
 
 ### 1-ScrubberService
 [ScrubberService](ScrubberService.md)
