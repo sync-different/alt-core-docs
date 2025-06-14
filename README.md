@@ -1,4 +1,34 @@
-# alt-core-docs
+# Introduction
+
+For a general overview of Alterante and what it does, start with FAQ first.
+
+In a nutshell, Alterante has X main capabilities:
+
+* Search engine for all files, including metadata extraction for PDF, JPG, MP3, etc.
+* Automated sync/backup/replication for all files, using free space available
+* Access to all files from any browser or mobile device
+
+A **node** is a unit of compute+storage, which runs on a computer (Win, Mac, Linux).
+There are 2 two types of **nodes** - client and server. 
+
+A **cluster** is a just a collection of nodes, with at least 1 server.
+
+A **server** node has the following responsibilites:
+
+* keeps track of all nodes on a network and free space available
+* keep a centralized index of all the metadata accross all the nodes
+* create replication orders for each node in the system
+* index all files and make them available to API layer
+* manage settings for the cluster
+
+A **client** node has the following responsilibites:
+
+* regularly ping the server to inform uptime and free space
+* index all the local files and make them available to API layer
+* execute the replication orders defined by the server
+* transfer metadata to the server
+
+# Overview
 
 Alt documentation is organized into these key sections:
 
