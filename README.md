@@ -9,33 +9,34 @@ In a nutshell, Alterante has X main capabilities:
 * Access to all files from any browser or mobile device
 
 A **node** is a unit of compute+storage, which runs on a computer (Win, Mac, Linux).
-There are 2 two types of **nodes** - client and server. 
+There are 2 two types of **nodes** - clients and servers. 
 
 A **cluster** is a just a collection of nodes, with at least 1 server.
 
 A **server** node has the following responsibilites:
 
-* keeps track of all nodes on a network and free space available
+* keeps track of all **nodes** on the **cluster** and free space available
 * keep a centralized index of all the metadata accross all the nodes
-* create replication orders for each node in the system
-* index all files and make them available to API layer
-* manage settings for the cluster
+* create replication orders for each node
+* index all files and make them available to the API layer
+* manage settings for the cluster (admin and user settings)
 
 A **client** node has the following responsilibites:
 
-* regularly ping the server to inform uptime and free space
-* index all the local files and make them available to API layer
-* execute the replication orders defined by the server
-* transfer metadata to the server
+* regularly ping the **server** to inform about uptime, IP, and free space
+* extract metadata from files
+* index all local files and make them available to API layer
+* execute the replication orders issued by the **server**
+* transfer metadata to the **server**
 
 # Overview
 
 Alt documentation is organized into these key sections:
 
-* 1-Core services: Description of client, server, and cloud services. Click [here](#core-services)
-* 2-Data Layer: Data layer where all data is persisted. Click [here](#data-layer)
-* 3-Configuration Files: Description of config files. Click [here](#config-files)
-* 4-Sequence Diagrams: Diagrams that describe key user case sequences. Click [here](#diagrams)
+* 1- **Core services**: Description of client, server, and cloud services. Click [here](#core-services)
+* 2- **Data Layer**: Data layer where all data is persisted. Click [here](#data-layer)
+* 3- **Configuration Files**: Description of config files. Click [here](#config-files)
+* 4- **Sequence Diagrams**: Diagrams that describe key user case sequences. Click [here](#diagrams)
 
 ## <a name="core-services"></a>1-Core Services
 
