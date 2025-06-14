@@ -1,12 +1,14 @@
 # Introduction
 
-For a general overview of Alterante and what it does, start with FAQ first.
+Alterante is a decentralized filesystem.
 
-In a nutshell, Alterante has X main capabilities:
+For a general overview of Alterante and what it does, start with [FAQ](https://www.hivebot.co/faq.html) first.
 
-* Search engine for all files, including metadata extraction for PDF, JPG, MP3, etc.
-* Automated sync/backup/replication for all files, using free space available
-* Access to all files from any browser or mobile device
+In a nutshell, Alterante has 3 main capabilities:
+
+* **Discovery & Organization** - Decentralized Search engine for all files accross all machines. Indexing includes deep metadata extraction for PDF, JPG, MP3, etc.
+* **Data Protection** - Automated sync/backup/replication for all files, using free space available on all machines
+* **Access** - Access to all files from any browser or mobile device using secure E2E encrypted channels between devices
 
 A **node** is a unit of compute+storage, which runs on a computer (Win, Mac, Linux).
 There are 2 two types of **nodes** - clients and servers. 
