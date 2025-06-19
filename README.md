@@ -77,13 +77,26 @@ RTServer    | [WebServer](WebServer.md)                               | HTTP Web
 CloudBackup | AmazonDrive                             | Synchronize files with Amazon S3 bucket
 Mailer      | Mailer                                  | Communication with Email mailbox
 
-### Cloud Services
+### Cloud Service
 
 These services run on a cloud node (e.g VM on a Public Cloud such as Amazon, Azure, or GCP)
 
 Module    | Component             | Description
 --------- | --------------        | -------------
 Relay     | RelayService          | Relay HTTP/API requests from clients to server
+
+
+### Helper Libaries
+
+Module      | Class / Component         | Description
+----------- | -----------------   		| -------------
+cass-server | [DatabaseEntry](DatabaseEntry.md)	 			| Database entry record schema
+cass-server | [FfmpegExecutor](FfmpegExecutor.md) 				| Build and run scripts for FFmpeg video extraction
+cass-server | [FileDatabase](FileDatabase.md)   				| File database helper functions
+cass-server | [FileDatabaseEntry](FileDatabaseEntry.md)  		 	| File database entry record schema
+cass-server | [FileUtils](FileUtils.md)   					| File utils misc functions
+cass-server | [RecordStats](RecordStats.md) 					| Record Stats functions
+cass-server | [ZipFolder](ZipFolder.md)   					| ZIP i/o helper functions
 
 ## <a name="data-layer"></a>2-Data Layer
 
