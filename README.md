@@ -69,10 +69,10 @@ These services run on a server node.
 
 Module      | Component           | Description
 ----------- | -----------------   | -------------
-Scrubber    | BroadcastService                        | Broadcast Server IP address (discovered by Client)
+Scrubber    | [BroadcastService](BroadcastService.md)                        | Broadcast Server IP address (discovered by Client)
 Scrubber    | [ProcessorService](ProcessorService.md) | Ingest metadata, add to main index
 Scrubber    | [BackupServerService](BackupServerService.md)                     | Generate backup orders for clients
-Scrubber    | RelayVaultService                       | Communicaton to/from Relay Server (for traffic relay)
+Scrubber    | [RelayVaultService](RelayVaultService.md)                     | Communicaton to/from Relay Server (for traffic relay)
 RTServer    | [WebServer](WebServer.md)                               | HTTP Web Server for REST API
 CloudBackup | AmazonDrive                             | Synchronize files with Amazon S3 bucket
 Mailer      | Mailer                                  | Communication with Email mailbox
