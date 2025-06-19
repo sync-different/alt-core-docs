@@ -71,7 +71,7 @@ Module      | Component           | Description
 ----------- | -----------------   | -------------
 Scrubber    | BroadcastService                        | Broadcast Server IP address (discovered by Client)
 Scrubber    | [ProcessorService](ProcessorService.md) | Ingest metadata, add to main index
-Scrubber    | BackupServerService                     | Generate backup orders for clients
+Scrubber    | [BackupServerService](BackupServerService.md)                     | Generate backup orders for clients
 Scrubber    | RelayVaultService                       | Communicaton to/from Relay Server (for traffic relay)
 RTServer    | [WebServer](WebServer.md)                               | HTTP Web Server for REST API
 CloudBackup | AmazonDrive                             | Synchronize files with Amazon S3 bucket
