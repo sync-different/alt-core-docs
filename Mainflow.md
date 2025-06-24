@@ -5,7 +5,7 @@
 2. File detected by ScannerService
 3.	Metadata extracted from File
 4. Metadata sent to RTServer
-5. RTServer ingests metadata into Core Index
+5. RTServer ingests metadata into Index
 6. BackupServer creates replication order
 7. Client fetches and executes replication order
 8. File is replicated on Client
