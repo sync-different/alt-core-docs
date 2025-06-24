@@ -23,7 +23,8 @@ sequenceDiagram
 	 Incoming->>RT: New files detected
 	 RT->>DB: Store metadata in Core Index
 	 DB->>BSS: Create replication orders for clients
-	 BSS->>BCS: Fetch BackupOrder from Server
+	 BSS->>BO: Store backup order
+	 BO->>BCS: Fetch BackupOrder from Server
 	 BCS->>IncomingCS: Execute replication, fetch & store files 
 	 IncomingCS->>RTCS: New files detected (client side)
 	 RTCS->>DBCS: Store metadata in Local Index
