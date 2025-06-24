@@ -6,7 +6,8 @@
 flowchart LR
     ScannerService --> TransferService 
     TransferService --> RTServer
-    RTServer --> BackupServer
+    RTServer --> ProcessorService
+    ProcessorService --> BackupServer
     BackupServer --> BackupClient
     BackupClient --> RTServer
 ```
