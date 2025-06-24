@@ -18,6 +18,9 @@
 flowchart LR
     ScannerService --> TransferService 
     TransferService --> RTServer
+    RTServer --> BackupServer
+    BackupServer --> BackupClient
+    BackupClient --> RTServer
 ```
 
 ```mermaid
