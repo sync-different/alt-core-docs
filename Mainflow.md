@@ -8,8 +8,6 @@ sequenceDiagram
     participant Incoming as Incoming Directory
     participant RT as RTServer (localhost:8081)
     participant DB as Database (records.db)
-    participant Thumb as Thumbnailator
-    participant Audio as JAudioTagger
     participant BSS as BackupServerService
     participant BCS as BackupClientService
     participant BO as BackupOrder Directory
