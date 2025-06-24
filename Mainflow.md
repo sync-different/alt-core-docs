@@ -16,7 +16,8 @@
 
 ```mermaid
 flowchart LR
-    Start --> Stop
+    ScannerService --> TransferService 
+    TransferService --> RTServer
 ```
 
 ```mermaid
