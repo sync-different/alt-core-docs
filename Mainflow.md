@@ -15,7 +15,7 @@ sequenceDiagram
 
     User->>FS: User saves new file in local folder
 	 FS->>ScaS: File detected
-	 SCaS: New files detected and scanned, stored in /outgoing
+	 SCaS-TS: New files detected and scanned, stored in /outgoing
 	 TS->>RT: Send files via HTTP to RTServer	 RT->>DB: Index files
     
 ```
