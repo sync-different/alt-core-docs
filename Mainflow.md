@@ -15,15 +15,6 @@
 ## Sequence Diagram
 
 ```mermaid
-flowchart LR
-    ScannerService --> TransferService 
-    TransferService --> RTServer
-    RTServer --> BackupServer
-    BackupServer --> BackupClient
-    BackupClient --> RTServer
-```
-
-```mermaid
 sequenceDiagram
     participant User as User/System
     participant FS as File System (/Users/)
