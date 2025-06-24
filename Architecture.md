@@ -24,14 +24,14 @@ Component           | Description
 [BackupClientService](BackupClientService.md) | Process replication orders from server
 
 ## Server-side components
-Component           						| Description
------------------   						| -------------
-BroadcastService](BroadcastService.md)  | Broadcast Server IP address (discovered by Client)
+Component           						  | Description
+-----------------   						  | -------------
+BroadcastService](BroadcastService.md)        | Broadcast Server IP address (discovered by Client)
 [ProcessorService](ProcessorService.md)       | Ingest metadata, add to main index
-BackupServerService](BackupServerService.md)  | Generate backup orders for clients
-RelayVaultService](RelayVaultService.md       | Communicaton to/from Relay Server (for traffic relay)
+[BackupServerService](BackupServerService.md) | Generate backup orders for clients
+[RelayVaultService](RelayVaultService.md      | Communicaton to/from Relay Server (for traffic relay)
 [WebServer](WebServer.md)                     | HTTP Web Server for REST API
-AmazonDrive                            | Synchronize files with Amazon S3 bucket
-Mailer                                 | Execute amail commands
+AmazonDrive                                   | Synchronize files with Amazon S3 bucket
+Mailer                                        | Fetch emails, execute email commands
 
 
