@@ -1,3 +1,10 @@
+<h1 align="center">
+  <br>
+  <img src="https://github.com/sync-different/.github/blob/main/alt-logo.png" alt="Alterante Core" width="250">
+</h1>
+<h4 align="center">A virtual filesystem written in Java.
+</h4>
+
 # Introduction
 
 Alterante is a decentralized filesystem.
