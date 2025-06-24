@@ -12,7 +12,7 @@ flowchart LR
     BackupClient --> RTServer
 ```
 
-##Client-side
+## Client-side components
 
 Component           | Description
 --------------      | -------------
@@ -23,7 +23,7 @@ Component           | Description
 [TransferService](TransferService.md)         | Package metadata into ZIP files, transfer to server
 [BackupClientService](BackupClientService.md) | Process replication orders from server
 
-##Server-side
+## Server-side components
 Component           						| Description
 -----------------   						| -------------
 BroadcastService](BroadcastService.md)  | Broadcast Server IP address (discovered by Client)
