@@ -15,10 +15,11 @@
 ## Sequence Diagram
 
 ```mermaid
-
 flowchart LR
     Start --> Stop
+```
 
+```mermaid
 sequenceDiagram
     participant User as User/System
     participant FS as File System (/Users/)
