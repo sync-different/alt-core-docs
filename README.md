@@ -37,7 +37,8 @@ A **client** node has the following responsilibites:
 * extract metadata from files
 * index all local files and make them available to API layer
 * execute the replication orders issued by the **server**
-* transfer metadata to the **server**
+* notify server of new/changed/deleted files
+* transfer file metadata to the **server**
 
 # Overview
 
