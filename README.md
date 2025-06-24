@@ -49,6 +49,9 @@ Alt documentation is organized into these key sections:
 * 3- **Configuration Files**: Description of config files. Click [here](#config-files)
 * 4- **Sequence Diagrams**: Diagrams that describe key user case sequences. Click [here](#diagrams)
 
+## Architecture
+General architecture diagram - [Architecture](Architecture.md)
+
 ## <a name="core-services"></a>1-Core Services
 
 The services are divided into 3 categories:
