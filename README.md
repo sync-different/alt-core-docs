@@ -2,7 +2,7 @@
   <br>
   <img src="https://github.com/sync-different/.github/blob/main/alt-logo.png" alt="Alterante Core" width="250">
 </h1>
-<h4 align="center">A virtual filesystem written in Java.
+<h4 align="center">A virtual filesystem + file manager written in Java.
 </h4>
 
 # Introduction
@@ -19,10 +19,9 @@ In a nutshell, Alterante has 3 main capabilities:
 
 # Terminology
 
-A **node** is a unit of compute+storage, which runs on a computer (Win, Mac, Linux).
-There are 2 two types of nodes - **clients** and **servers**. 
+A **node** is a unit of compute+storage, which runs on a computer (Win, Mac, Linux). A **cluster** is a collection of **nodes**, with at least 1 **server**.
 
-A **cluster** is a collection of **nodes**, with at least 1 **server**.
+There are 2 two types of nodes - **clients** and **servers**. 
 
 A **server** node has the following responsibilites:
 
