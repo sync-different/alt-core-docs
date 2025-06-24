@@ -2,7 +2,7 @@
 sequenceDiagram
     participant User as User/System
     participant FS as File System (/Users/)
-    participant SS as ScrubberService
+    participant ScaS as ScrubberService
     participant TS as TransferService
     participant DB as Database (records.db)
     participant RT as RTServer (localhost:8081)
@@ -14,7 +14,8 @@ sequenceDiagram
     participant PDF as PDFRenderer
 
     User->>FS: User saves new file in local folder
-	 SS->>TS: File detected , new files stored in /outgoing
+	 FS->>ScaS: File detected
+	 SCaS: New files detected and scanned, stored in /outgoing
 	 TS->>RT: Send files via HTTP to RTServer	 RT->>DB: Index files
     
 ```
