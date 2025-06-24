@@ -12,6 +12,7 @@ sequenceDiagram
     participant Audio as JAudioTagger
     participant BSS as BackupServerService
     participant BCS as BackupClientService
+    participant BO as BackupOrder Directory
 
     User->>FS: User saves new file in local folder
 	 FS->>SCS: File detected
@@ -21,5 +22,6 @@ sequenceDiagram
 	 Incoming->>RT: New files detected
 	 RT->>DB: Store metadata in Index
 	 DB->>BSS: Create replication orders for clients
+	 BSS->>BCS: Fetch BackupOrder from Server 
     
 ```
