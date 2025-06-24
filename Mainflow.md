@@ -1,4 +1,4 @@
-#Main workflow
+# Main workflow
 **Steps**
 
 1. User saves new file in local folder
@@ -12,7 +12,7 @@
 9. File detected by Client ScannerService
 10. New file notification sent to Server
 
-##Sequence Diagram
+## Sequence Diagram
 
 ```mermaid
 sequenceDiagram
