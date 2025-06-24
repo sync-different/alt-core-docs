@@ -13,8 +13,8 @@ sequenceDiagram
     participant Audio as JAudioTagger
     participant PDF as PDFRenderer
 
-    User->>SS: Initialize ScrubberService
-	 SS->>TS: Save new files to /incoming
-	 TS->>RT: Send files via HTTP to RTServer	
+    User->>FS: User saves new file in local folder
+	 SS->>TS: File detected , new files stored in /outgoing
+	 TS->>RT: Send files via HTTP to RTServer	 RT->>DB: Index files
     
 ```
