@@ -2,19 +2,16 @@
 
 ## Key System Capabilities
 
-1. __File Indexing & Organization__
-
-   - Scans and indexes files across multiple local drives
-   - Supports automatic file categorization (photos, videos, audio, documents)
-   - Provides tagging functionality for file organization
-   - Tracks file metadata and creates searchable indexes
-
-2. __Multi-Platform Access__
-
-   - Web-based interface for desktop browsers
-   - Native mobile support for iOS and Android devices
-   - RESTful API for remote file access
-   - Streaming support for media files (including HLS for video)
+Group | Capability | Component(s)
+------ | ------- | -----
+File Indexing & Organization | Scans and indexes files across multiple local drives | ScannerService
+File Indexing & Organization | Supports automatic file categorization (photos, videos, audio, documents) | ScannerService
+File Indexing & Organization | Provides tagging functionality for file organization | RTServer
+File Indexing & Organization | Tracks file metadata and creates searchable indexes | RTServer
+Multi-Platform Access | Web-based interface for desktop browsers | WebApp
+Multi-Platform Access | Native mobile support for iOS and Android devices | RTServer
+Multi-Platform Access | RESTful API for remote file access | RTServer
+Multi-Platform Access | Streaming support for media files (including HLS for video) | RTServer
 
 3. __File Sharing & Collaboration__
 
