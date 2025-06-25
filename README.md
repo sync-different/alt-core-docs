@@ -47,15 +47,16 @@ A **client** node has the following responsilibites:
 
 Alt documentation is organized into these key sections:
 
-* 1- **Core services**: Description of client, server, and cloud services. Click [here](#core-services)
-* 2- **Data Layer**: Data layer where all data is persisted. Click [here](#data-layer)
-* 3- **Configuration Files**: Description of config files. Click [here](#config-files)
-* 4- **Sequence Diagrams**: Diagrams that describe key user case sequences. Click [here](#diagrams)
+* 1- **Architecture **: Core architecture & diagram [here](#architecture)
+* 2- **Core services**: Description of client, server, and cloud services. Click [here](#core-services)
+* 3- **Data Layer**: Data layer where all data is persisted. Click [here](#data-layer)
+* 4- **Configuration Files**: Description of config files. Click [here](#config-files)
+* 5- **Sequence Diagrams**: Diagrams that describe key user case sequences. Click [here](#diagrams)
 
-## Architecture
+## <a name="architecture">1 - Architecture
 General architecture diagram - [Architecture](Architecture.md)
 
-## <a name="core-services"></a>1-Core Services
+## <a name="core-services"></a>2-Core Services
 
 The services are divided into 3 categories:
 
@@ -111,7 +112,7 @@ cass-server | [FileUtils](FileUtils.md)   					| File utils misc functions
 cass-server | [RecordStats](RecordStats.md) 					| Record Stats functions
 cass-server | [ZipFolder](ZipFolder.md)   					| ZIP i/o helper functions
 
-## <a name="data-layer"></a>2-Data Layer
+## <a name="data-layer"></a>3-Data Layer
 
 ### DB records
 * **records.db** : Stores records for each file in the system - MD5, file paths, timestamps
@@ -124,9 +125,9 @@ cass-server | [ZipFolder](ZipFolder.md)   					| ZIP i/o helper functions
 * **localdb/BackupJobs** : Replication orders for each client node (what files to distribute in each client)
 
 
-## <a name="config-files"></a>3-Config Files
+## <a name="config-files"></a>4-Config Files
 
-## <a name="diagrams"></a>4-Sequence Diagrams
+## <a name="diagrams"></a>5-Sequence Diagrams
 
 ### 1-ScrubberService
 [ScrubberService](ScrubberService.md)
