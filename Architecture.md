@@ -19,10 +19,11 @@ __1- File Indexing & Organization__
 Group | Capability | Component(s)
 ------ | ------- | -----
 File Indexing & Organization | Scans files across multiple local drives | ScannerService
-File Indexing & Organization | Indexes files across multiple local drives | ProcessorService
-File Indexing & Organization | Supports automatic file categorization (photos, videos, audio, documents) | ScannerService
-File Indexing & Organization | Provides tagging functionality for file organization | RTServer
-File Indexing & Organization | Tracks file metadata and creates searchable indexes | RTServer
+File Indexing & Organization | Extract metadata from files | ProcessorService
+File Indexing & Organization | Supports automatic file categorization (photos, videos, audio, documents) | ScannerService, ProcessorService
+File Indexing & Organization | Indexes Metadata for Search functionality | RTServer
+File Indexing & Organization | Provides manual tagging functionality for file organization | RTServer
+File Indexing & Organization | Tracks file metadata and creates searchable index | RTServer
 
 __2-Multi-Platform Access__
 
