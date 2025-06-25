@@ -5,6 +5,9 @@
 <h4 align="center">A virtual filesystem + file manager written in Java.
 </h4>
 
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![Discord](https://img.shields.io/discord/1153355258236502046)](https://discord.com/invite/Gjw9sqYuUY)
+
 # Introduction
 
 Alterante is a decentralized filesystem.
