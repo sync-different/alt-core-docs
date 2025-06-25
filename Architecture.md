@@ -2,51 +2,69 @@
 
 ## Key System Capabilities
 
+__1- File Indexing & Organization__
+
 Group | Capability | Component(s)
 ------ | ------- | -----
 File Indexing & Organization | Scans and indexes files across multiple local drives | ScannerService
 File Indexing & Organization | Supports automatic file categorization (photos, videos, audio, documents) | ScannerService
 File Indexing & Organization | Provides tagging functionality for file organization | RTServer
 File Indexing & Organization | Tracks file metadata and creates searchable indexes | RTServer
+
+__2-Multi-Platform Access__
+
+Group | Capability | Component(s)
+------ | ------- | -----
 Multi-Platform Access | Web-based interface for desktop browsers | WebApp
 Multi-Platform Access | Native mobile support for iOS and Android devices | RTServer
 Multi-Platform Access | RESTful API for remote file access | RTServer
 Multi-Platform Access | Streaming support for media files (including HLS for video) | RTServer
 
-3. __File Sharing & Collaboration__
+__3-File Sharing & Collaboration__
 
-   - User authentication with admin and regular user roles
-   - Secure file sharing with specific users or groups
-   - Email integration for sending files and share notifications
-   - Support for public/private file access controls
+Group | Capability | Component(s)
+------ | ------- | -----
+File Sharing & Collaboration | User authentication with admin and regular user roles | RTServer
+File Sharing & Collaboration | Secure file sharing with specific users or groups
+File Sharing & Collaboration | Email integration for sending files and share notifications
+File Sharing & Collaboration | Support for public/private file access controls
 
-4. __Distributed Storage Architecture__
+__4-Distributed Storage Architecture__
 
-   - Supports multiple storage nodes in a cluster
-   - File replication across nodes for redundancy
-   - Remote cluster connectivity for accessing files from other Alterante servers
-   - Load balancing and failover capabilities
+Group | Capability | Component(s)
+------ | ------- | -----
+Distributed Storage Architecture | Supports multiple storage nodes in a cluster | RTServer
+Distributed Storage Architecture | File replication across nodes for redundancy |  RTServer, BackupClient, BackupServer
+Distributed Storage Architecture | Remote cluster connectivity for accessing files from other Alterante servers | RTServer
+Distributed Storage Architecture | Load balancing and failover capabilities | RTServer
 
-5. __Backup & Sync Features__
+__5-Backup & Sync__
 
-   - Automated backup to designated folders
-   - Sync functionality between multiple drives/nodes
-   - Integration with Amazon Cloud Drive for cloud backup
-   - Configurable retention and replication policies
+Group | Capability | Component(s)
+------ | ------- | -----
+Backup & Sync | Automated backup to designated folders | BackupServer, BackupClient
+Backup & Sync | Sync functionality between multiple drives/nodes | BackupServer, BackupClient
+Backup & Sync | Integration with Amazon Cloud Drive for cloud backup | CloudBackup
+Backup & Sync | Configurable retention and replication policies | BackupServer
 
-6. __Security & Privacy__
+__6-Security & Privacy__
 
-   - RSA and AES encryption for secure communications
-   - Session-based authentication with UUID tokens
-   - Support for hidden/private file collections
-   - Secure remote access through encrypted channels
+Group | Capability | Component(s)
+------ | ------- | -----
+Security & Privacy | RSA and AES encryption for secure communications
+Security & Privacy | Session-based authentication with UUID tokens
+Security & Privacy | Support for hidden/private file collections
+Security & Privacy | Secure remote access through encrypted channels
 
-7. __Setup & Configuration__
 
-   - Web-based setup wizard for initial configuration
-   - Support for both server and client modes
-   - Configurable email settings for notifications
-   - Blacklist functionality for excluding folders
+__7-Setup & Configuration__
+
+Group | Capability | Component(s)
+------ | ------- | -----
+Setup | Web-based setup wizard for initial configuration | WebApp
+Setup | Support for both server and client modes | RTServer
+Setup | Configurable email settings for notifications | WebApp
+Setup | Blacklist functionality for excluding folders | ScannerService
 
 ## Architecture Diagram
 
