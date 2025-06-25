@@ -1,5 +1,17 @@
 # Architecture
 
+## Architecture Diagram
+
+```mermaid
+flowchart LR
+    ScannerService --> TransferService 
+    TransferService --> RTServer
+    RTServer --> ProcessorService
+    ProcessorService --> BackupServer
+    BackupServer --> BackupClient
+    BackupClient --> RTServer
+```
+
 ## Key System Capabilities
 
 __1- File Indexing & Organization__
@@ -66,17 +78,6 @@ Setup | Support for both server and client modes | RTServer
 Setup | Configurable email settings for notifications | WebApp
 Setup | Blacklist functionality for excluding folders | ScannerService
 
-## Architecture Diagram
-
-```mermaid
-flowchart LR
-    ScannerService --> TransferService 
-    TransferService --> RTServer
-    RTServer --> ProcessorService
-    ProcessorService --> BackupServer
-    BackupServer --> BackupClient
-    BackupClient --> RTServer
-```
 
 ## Client-side components
 
