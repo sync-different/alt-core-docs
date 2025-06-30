@@ -12,7 +12,7 @@
 
 A big thanks to all the contributors worldwide. This is a global effort with collaboration from these countries:
 ![United Nations](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/unitednations.png "United Nations")
-![United Nations](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/unitedstates.png "United States")
+![United Nations](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/us.png "United States")
 ![United States](https://github.com/lipis/flag-icons/blob/main/flags/4x3/us.svg "United States")
 
 
