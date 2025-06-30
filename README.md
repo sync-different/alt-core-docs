@@ -8,6 +8,11 @@
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Discord](https://img.shields.io/discord/1153355258236502046)](https://discord.com/invite/Gjw9sqYuUY)
 
+#Contributors / Thanks
+
+A big thanks to all the contributors worldwide. This is a global effort with collaboration from these countries:
+[United States]([https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/us.png](https://github.com/lipis/flag-icons/blob/main/flags/4x3/us.svg) "United States")
+
 # Introduction
 
 Alterante is a decentralized filesystem.
